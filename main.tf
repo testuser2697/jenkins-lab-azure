@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "azurerm" {
-    storage_account_name = "<your-storage-account-name>"
+    storage_account_name = "jenkinsstatemichael"
     container_name       = "terraform-state"
     key                  = "terraform.tfstate"
   }
