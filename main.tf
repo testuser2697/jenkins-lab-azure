@@ -21,6 +21,6 @@ terraform {
 }
 
 resource "azurerm_resource_group" "example" {
-  name     = "example-resource-group"
+  name     = "example-resource-group-1"
   location = "eastus"
 }
