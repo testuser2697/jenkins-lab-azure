@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/testuser2697/jenkins-lab-azure.git'
+                git branch: 'main', url: 'https://<your repo url>'
             }
         }
         stage('Install Terraform') {
@@ -67,7 +67,7 @@ pipeline {
             steps {
                 sh '''
                 echo "Destroying Terraform-managed infrastructure..."
-                terraform destroy
+                terraform destroy -auto-approve
                 '''
             }
         }
