@@ -21,6 +21,6 @@ terraform {
 }
 
 resource "azurerm_resource_group" "example" {
-  name     = "RG4a"
+  name     = "RG4"
   location = "westeurope"
 }
